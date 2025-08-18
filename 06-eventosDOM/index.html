@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #Principal{
+            background-color: blueviolet;
+            text-align: center;
+            padding: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Principal" onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()">
+        Clique na area em violeta
+    </div>
+    <script>
+        function clicar(){
+            Principal.style.background = "black";
+            Principal.innerText = "Clicou!";
+            Principal.style.color = "white";
+        }
+        function entrar(){
+            Principal.style.background = "pink";
+            Principal.innerText = "Entrou!";
+            Principal.style.color = "white";
+        }
+        function sair(){
+            Principal.style.background = "orange";
+            Principal.innerText = "Saiu!";
+            Principal.style.color = "black";
+        }
+    </script>
+</body>
+</html>
