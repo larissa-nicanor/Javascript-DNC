@@ -1,6 +1,5 @@
 body{
     background-color:rgb(48,48,48);
-    color:rgb(239,235,228);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -21,19 +20,11 @@ section{
     margin: auto;
 }
 
-#botao{
+.botao{
     background-color: rgb(12,112,242);
     color: rgb(239,235,228);
     border: 0px;
-    width: 150px;
+    width: 100px;
     height: 30px;
     border-radius: 10px;
-}
-
-.form{
-    margin: 8px;
-    border-radius: 10px;
-    border: 0px;
-    height: 20px;
-    width: 200px;
 }
