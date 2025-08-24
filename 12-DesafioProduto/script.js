@@ -62,7 +62,7 @@ class Produto{
 
             td_id.innerText = this.arrayProdutos[i].id; // Exibe o id
             td_nome.innerText = this.arrayProdutos[i].nomeProduto; // Exibe o nome
-            td_preco.innerText = this.arrayProdutos[i].preco; // Exibe o preço
+            td_preco.innerText = Number(this.arrayProdutos[i].preco).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); // Exibe o preço formatado
 
             // Cria o botão de deletar (imagem)
             let imagem = document.createElement('img');

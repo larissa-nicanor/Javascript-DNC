@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> API - Star Wars </title>
+</head>
+<body>
+    <script>
+        // Exibe mensagem no console para indicar início da API
+        console.log("API - Star Wars");
+
+        // Faz uma requisição GET para a API de Star Wars (SWAPI) para buscar informações da pessoa de id 1,2,3...
+        fetch("https://swapi.info/api/people/1")
+            .then(function(response) {
+                // Converte a resposta para JSON
+                return response.json();
+            })
+            .then(function(data) {
+                // Exibe o nome da pessoa no console
+                console.log(data.name);
+            });
+    </script>
+</body>
+</html>
